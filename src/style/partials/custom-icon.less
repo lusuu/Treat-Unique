@@ -1,0 +1,104 @@
+/* Custom Icon */
+.custom-icon {
+	width: 45px;
+	height: 45px;
+	color: #f2f2f2;
+	border-radius: 100%;
+	display: inline-block;
+	position: relative;
+
+	i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		z-index: 1;
+		font-size: 30px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #215ed8;
+		border-radius: 100%;
+		transition: all ease .3s;
+	}
+
+	&.blue {
+
+		&:after {
+			background: #a5bfef;
+		}
+
+		i {
+			color: #215ed8;
+		}
+	}
+
+	&.blue-dark {
+
+		&:after {
+			background: #215ed8;
+		}
+
+		i {
+			color: #a5bfef;
+		}
+	}
+
+	&.pink {
+
+		&:after {
+			background: #f7cec4;
+		}
+
+		i {
+			color: #ed846b;
+		}
+	}
+
+	&.pink-dark {
+
+		&:after {
+			background: #ed846b;
+		}
+
+		i {
+			color: #f7cec4;
+		}
+	}
+
+	&.beige {
+
+		&:after {
+			background: #fcf9f5;
+		}
+
+		i {
+			color: #e2c69b;
+		}
+	}
+
+	&.beige-dark {
+
+		&:after {
+			background: #e2c69b;
+		}
+
+		i {
+			color: #f9f4ea;
+		}
+	}
+
+	&.small {
+
+		i {
+			font-size: 22px;
+		}
+	}
+}

@@ -1,0 +1,198 @@
+/* Navigation Section */
+.navigation-section {
+	.clearfix;
+	max-height: 2000px;
+	transition: max-height ease .3s;
+
+	@media @tablet {
+    	max-height: 0;
+    	overflow: hidden;
+    }
+}
+
+/* Navigation */
+.navigation {
+	.listreset;
+	.inline-block-space-parent;
+	float: left;
+
+	@media @tablet {
+		float: none;
+	}
+
+	li {
+		.inline-block-space-child;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		font-size: 16px;
+
+		@media @tablet {
+			display: block;
+			border-top: solid 1px #fff;
+		}
+
+		&:last-child {
+
+			@media @tablet {
+				border-bottom: solid 1px #fff;
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			right: 0;
+			transform: translate(50%, -50%);
+			height: 30px;
+			width: 1px;
+			background: #333;
+			transition: opacity ease 0s;
+
+			@media @tablet {
+				display: none;
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 10px;
+			left: 0;
+			transform: translate(-50%, -50%);
+			height: 30px;
+			width: 1px;
+			background: #333;
+			transition: opacity ease 0s;
+
+			@media @tablet {
+				display: none;
+			}
+		}
+	}
+
+	li {
+
+		&:nth-child(2) {
+
+			a {
+				&:after {
+					background: #ed846b;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+
+			a {
+				&:after {
+					background: #215ed8;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+
+			a {
+				&:after {
+					background: #333;
+				}
+			}
+		}
+
+		&:nth-child(5) {
+
+			a {
+				&:after {
+					background: #333;
+				}
+			}
+		}
+
+		&:nth-child(6) {
+
+			a {
+				&:after {
+					background: #e2c69b;
+				}
+			}
+		}
+	}
+
+	.only-mobile {
+		display: none;
+
+		@media @mobile {
+			display: block;
+		}
+	}
+
+	a {
+		padding: 5px 19px;
+		position: relative;
+		cursor: pointer;
+
+		@media @tablet {
+			display: block;
+			padding: 10px 0;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: -1px;
+			right: -2px;
+			height: 4px;
+			background: #333;
+			opacity: 0;
+
+			@media @tablet {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Header Contacts */
+.header-contacts {
+	.listreset;
+	float: right;
+	font-size: 20px;
+
+	@media @tablet {
+		float: left;
+		padding: 12px 0 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 0 0 26px;
+
+		@media @tablet {
+    		padding: 12px 0;
+    		display: block;
+   		}
+
+   		@media @mobile {
+			padding: 5px 0;
+		}
+	}
+
+	.icon-twitter {
+		font-size: 17px;
+	}
+
+	a {
+		transition: color ease .2s;
+
+		&:hover {
+			color: #ed846b;
+
+			@media @tablet {
+				color: #333;
+			}
+		}
+	}
+}

@@ -1,0 +1,158 @@
+/* Home Question Section */
+.home-question-section {
+	padding: 54px 0 60px;
+	background: #f2f2f2;
+
+	@media @tablet {
+		padding: 42px 0 15px;
+	}
+
+	.questions-box {
+		.clearfix;
+		display: flex;
+
+		@media @mobile {
+			display: block;
+		}
+	}
+
+	.question-box {
+		margin: 0 0 18px;
+		width: 33.3%;
+		display: flex;
+
+		@media @mobile {
+			width: 100%;
+			margin: 0 0 54px;
+		}
+	}
+
+	.hold {
+		display: flex;
+		flex-direction: column;
+		max-width: 300px;
+		padding: 0 30px 0 0;
+
+		@media @mobile {
+			display: block;
+			width: 100%;
+			max-width: none;
+			padding: 0;
+		}
+	}
+
+	.title-box {
+		display: flex;
+		margin: 0 0 24px;
+		padding: 0 0 24px;
+		border-bottom: solid 1px #000;
+		font-size: 26px;
+		line-height: 1.3;
+
+		@media @mobile {
+			height: auto;
+			overflow: hidden;
+			font-size: 24px;
+			line-height: 1.2;
+			margin: 0 0 22px;
+			padding: 0 0 22px;
+		}
+
+		.title {
+			height: 70px;
+			overflow: hidden;
+
+			@media @mobile {
+				height: auto;
+			}
+		}
+	}
+
+	.text-box {
+		display: flex;
+		flex-grow: 1;
+		margin: 0 0 42px;
+		font-size: 20px;
+		line-height: 1.5;
+
+		@media @mobile {
+			height: auto;
+			overflow: hidden;
+			font-size: 18px;
+			margin: 0 0 25px;
+		}
+	}
+
+	.link-box {
+		display: flex;
+	}
+
+	.link {
+		&:hover {
+			.icon {
+				&:after {
+					transform: scale(1.4);
+				}
+			}
+		}
+	}
+
+	.icon {
+		width: 45px;
+		height: 45px;
+		color: #f2f2f2;
+		display: block;
+		position: relative;
+
+		&:before {
+			font-size: 26px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			z-index: 1;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #215ed8;
+			border-radius: 100%;
+			transition: all ease .3s;
+		}
+	}
+
+	.question-box {
+		
+		&:nth-child(1) {
+			.icon {
+				&:after {
+					background: #215ed8;
+				}
+
+			}
+		}
+
+		&:nth-child(2) {
+			.icon {
+				&:after {
+					background: #ed846b;
+				}
+
+			}
+		}
+
+		&:nth-child(3) {
+			.icon {
+				&:after {
+					background: #e2c69b;
+				}
+			}
+		}
+	}
+}

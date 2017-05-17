@@ -1,0 +1,113 @@
+/* Burger Menu */
+.burger-menu {
+	cursor: pointer;
+	display: none;
+	float: right;
+
+	@media @tablet {
+    	display: block;
+    }
+
+    .line-1, 
+	.line-2, 
+	.line-3 {
+		width: 35px;
+		height: 2px;
+		background-color: #333;
+		margin: 9px 0;
+		transition: 0.4s;
+	}
+
+	.line-1 {
+		margin: 0 0 9px;
+	}
+}
+
+/* Burger Menu Animation */
+.change {
+
+	/* rotate first bar */
+	.line-1 {
+	    transform: rotate(-45deg) translate(-12px,10px);
+	}
+
+	/* fade out the second bar */
+	.line-2 {
+		opacity: 0;
+	}
+
+	/* rotate last bar */
+	.line-3 {
+		transform: rotate(45deg) translate(-5px,-5px);
+	}
+}
+
+.home-promo-section {
+	.burger-menu {
+
+	    .line-1, 
+		.line-2, 
+		.line-3 {
+			background-color: #fff;
+		}
+	}
+}
+
+.fixed-header {
+	.burger-menu {
+
+	    .line-1, 
+		.line-2, 
+		.line-3 {
+			background-color: #333;
+		}
+	}
+}
+
+.burger-active {
+
+	@media @tablet {
+		background: #ed846b;
+	}
+
+	.logo-burger-holder {
+		
+		@media @tablet {
+			margin: 0 0 35px;
+		}
+	}
+
+	.burger-menu {
+
+	    .line-1, 
+		.line-2, 
+		.line-3 {
+
+			@media @tablet {
+				background: #fff;
+			}
+		}
+	}
+
+	a {
+
+		@media @tablet {
+			color: #fff;
+		}
+	}
+
+	.navigation-section {
+
+		@media @tablet {
+			max-height: 2000px;
+		}
+	}
+}
+
+.red {
+	background: red;
+}
+
+.green {
+	background: green;
+}

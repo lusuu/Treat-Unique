@@ -1,0 +1,76 @@
+/* Header Substrite */
+.header-substrate {
+	background: @header-substrate-color;
+	position: relative;
+	padding-bottom: 0;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		background: @header-substrate-color;
+		height: 84px;
+	}
+
+	.navigation-section {
+
+		.navigation {
+
+			li {
+
+				&:after, 
+				&:before {
+					background: #fff;
+				}
+
+				a {
+					&:after {
+						background: #fff;
+					}
+				}
+
+				&.active {
+
+					a {
+
+						&:after {
+							background: #fff !important;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+	}
+
+	li {
+		&.hover-item {
+			a {
+				&:after {
+					background: #fff;
+				}
+			}
+		}
+	}
+
+	.header-contacts {
+
+		a {
+			transition: color ease .2s;
+
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+}
+
+.header-substrate-bottom {
+	background: @header-substrate-color;
+}

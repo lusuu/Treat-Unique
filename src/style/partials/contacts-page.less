@@ -1,0 +1,177 @@
+/* Contact Page */
+.contacts-form-section {
+	padding: 63px 0 84px;
+
+	@media @mobile {
+		padding: 45px 0 57px;
+	}
+
+	.main-holder {
+		max-width: 810px;
+	}
+
+	.input-textarea {
+		height: 390px;
+
+		@media @tablet {
+			height: 200px;
+		}
+	}
+
+
+	.agree-send-block {
+		.clearfix;
+
+		@media @mobile {
+			margin: -30px 0 0;
+		}
+	}
+
+	.agree-box {
+		float: left;
+
+		@media @mobile-x {
+			margin: 0 0 10px;
+			width: 100%;
+			float: none;
+		}
+
+		.custom-checkbox:not(:checked) + label,
+		.custom-checkbox:checked + label {
+
+			@media @mobile-x {
+				padding: 8px 0 8px 44px;
+			}
+		}
+	}
+
+
+	.button-box {
+		float: right;
+
+		@media @mobile-x {
+			width: 100%;
+			float: none;
+			text-align: right;
+		}
+		
+		.btn {
+			color: #ed846b;
+			background: none;
+			border: none;
+			font-size: 18px;
+
+			&:active {
+
+				.custom-icon {
+
+					&:after {
+						.scale-effect;
+					}
+				}
+			}
+		}
+
+		.text {
+			vertical-align: middle;
+		}
+
+		.custom-icon {
+			vertical-align: middle;
+			margin: 0 0 0 15px;
+		}
+	}
+}
+
+/* Contacts Info Section */
+.contacts-info {
+	padding: 70px 0 50px;
+	background: #f2f2f2;
+
+	@media @mobile {
+		padding: 50px 0 10px;
+	}
+
+	.main-holder {
+		.clearfix;
+		max-width: 810px;
+	}
+
+	.left-col {
+		max-width: 200px;
+		float: left;
+
+		@media @mobile {
+			margin: 0;
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.right-col {
+		max-width: 200px;
+		float: right;
+		margin-right: 75px;
+
+		@media @mobile {
+			margin: 0;
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.contact-box {
+		margin: 0 0 25px;
+
+		@media @mobile {
+			margin: 0 0 22px;
+		}
+
+		.title {
+			font-weight: bold;
+			margin: 0 0 3px;
+		}
+
+		.text {
+			line-height: 1.5;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		a {
+
+		}
+	}
+
+	.schedule-list {
+		.listreset;
+	
+		li {
+			
+		}
+
+		.time {
+			float: right;
+		}
+
+		.closed {
+
+		}
+	}
+}
+
+/* Contacts Map Section */
+.contacts-section {
+	padding: 10px 0;
+	background: #f2f2f2;
+}
+	
+#contacts-map {
+	height: 500px;
+
+	@media @mobile {
+		height: 200px;
+	}
+}

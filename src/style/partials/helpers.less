@@ -1,0 +1,34 @@
+/* Helpers */
+
+.listreset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-block-space-parent {
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -.36em;
+    word-spacing: -.36em;
+}
+
+.inline-block-space-child {
+	display: inline-block;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.scale-effect {
+    transform: scale(1.4);
+}
