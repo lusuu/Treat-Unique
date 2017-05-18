@@ -2,12 +2,27 @@ $('.promo-section .navigation > li').hover(
 	function() {
 		$('.promo-section .navigation').toggleClass('opacity-navigation');
 		$(this).toggleClass('hover-item');
+		$(this).prev('li').toggleClass('hover-item-prev');
+		$(this).next('li').toggleClass('hover-item-next');
 	}
 );
 
-$('.promo-section .navigation-inside > li').hover(
+$('.promo-section .navigation > li.first-on-desktop').hover(
+	function() {
+		$(this).closest('ul').toggleClass('hover-item-ul-prev');
+	}
+);
+
+$('.promo-section .navigation > li:last-child').hover(
+	function() {
+		$(this).closest('ul').toggleClass('hover-item-ul-next');
+	}
+);
+
+
+$('.promo-section .navigation-inside > li > a').hover(
 	function() {
 		$('.promo-section .navigation-inside').toggleClass('opacity-navigation');
-		$(this).toggleClass('hover-item')
+		$(this).closest('li').toggleClass('hover-item')
 	}
 );

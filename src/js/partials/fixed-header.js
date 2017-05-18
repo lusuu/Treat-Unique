@@ -31,7 +31,6 @@ function windowSizeNavigationScroll(){
 
 	if ($(window).width() >= '768'){
         $('.navigation-section-scroll').css( {'height': 'auto'});
-        console.log('yes');
     }
 }
 

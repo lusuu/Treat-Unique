@@ -38,9 +38,22 @@
 
 		.custom-checkbox:not(:checked) + label,
 		.custom-checkbox:checked + label {
+			vertical-align: middle;
 
 			@media @mobile-x {
 				padding: 8px 0 8px 44px;
+			}
+		}
+
+		.text {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 0 0 25px;
+
+			a {
+				&:hover {
+					color: #ed846b;
+				}
 			}
 		}
 	}
@@ -61,7 +74,7 @@
 			border: none;
 			font-size: 18px;
 
-			&:active {
+			&:hover {
 
 				.custom-icon {
 

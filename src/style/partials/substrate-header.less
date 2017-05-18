@@ -18,6 +18,11 @@
 
 		.navigation {
 
+			&:after, 
+			&:before {
+				background: #fff;
+			}
+
 			li {
 
 				&:after, 
@@ -54,6 +59,14 @@
 			a {
 				&:after {
 					background: #fff;
+				}
+			}
+		}
+
+		&.active-item {
+			a {
+				&:after {
+					opacity: 0 !important;
 				}
 			}
 		}

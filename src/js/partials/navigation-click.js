@@ -4,6 +4,7 @@ function windowSizeNavigation(){
     	// console.log('big');
     	$('.promo-section .header').removeClass('header-substrate');
     	$('.navigation-inside').removeClass('active');
+    	$('.header-substrate-bottom').height(0);
         
         $('.navigation li.with-drop-nav').on( "click", function() {
 
