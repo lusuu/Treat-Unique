@@ -68,14 +68,38 @@
 
 /* Home Promo Section */
 .home-promo-section	{
-	background: url(../img/homepage_image.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: red;
 	color: #fff;
 	padding: 84px 0 96px;
+	position: relative;
+    overflow: hidden;
 
 	@media @tablet {
 		padding: 0 0 42px;
+	}
+
+	.home-background-image {
+		
+		img {
+			max-height: none;
+			max-width: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			z-index: 0;
+			width: 100%;
+			min-height: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	.header, 
+	.main-holder {
+		position: relative;
+		z-index: 1;
 	}
 
 	.opacity-navigation {
@@ -192,7 +216,7 @@
 			
 			li {
 
-				&:nth-child(2) {
+				&:nth-child(1) {
 					a {
 						&:after {
 							background: #ed846b;
@@ -200,10 +224,18 @@
 					}
 				}
 
-				&:nth-child(3) {
+				&:nth-child(2) {
 					a {
 						&:after {
 							background: #215ed8;
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					a {
+						&:after {
+							background: #333;
 						}
 					}
 				}
@@ -217,14 +249,6 @@
 				}
 
 				&:nth-child(5) {
-					a {
-						&:after {
-							background: #333;
-						}
-					}
-				}
-
-				&:nth-child(6) {
 					a {
 						&:after {
 							background: #e2c69b;

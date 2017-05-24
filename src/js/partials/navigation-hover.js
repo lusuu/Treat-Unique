@@ -7,7 +7,7 @@ $('.promo-section .navigation > li').hover(
 	}
 );
 
-$('.promo-section .navigation > li.first-on-desktop').hover(
+$('.promo-section .navigation > li:first-child').hover(
 	function() {
 		$(this).closest('ul').toggleClass('hover-item-ul-prev');
 	}

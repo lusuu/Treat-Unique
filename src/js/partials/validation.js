@@ -78,3 +78,5 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// jQuery('.wpcf7-not-valid-tip').insertBefore('#form-id');

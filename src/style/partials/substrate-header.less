@@ -1,84 +1,86 @@
 /* Header Substrite */
-.header-substrate {
-	background: @header-substrate-color;
-	position: relative;
-	padding-bottom: 0;
-
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: 100%;
-		left: 0;
-		right: 0;
+.header {
+	&.header-substrate {
 		background: @header-substrate-color;
-		height: 84px;
-	}
+		position: relative;
+		padding-bottom: 0;
 
-	.navigation-section {
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			right: 0;
+			background: @header-substrate-color;
+			height: 84px;
+		}
 
-		.navigation {
+		.navigation-section {
 
-			&:after, 
-			&:before {
-				background: #fff;
-			}
-
-			li {
+			.navigation {
 
 				&:after, 
 				&:before {
 					background: #fff;
 				}
 
-				a {
-					&:after {
+				li {
+
+					&:after, 
+					&:before {
 						background: #fff;
 					}
-				}
-
-				&.active {
 
 					a {
-
 						&:after {
-							background: #fff !important;
-							opacity: 1;
+							background: #fff;
+						}
+					}
+
+					&.active {
+
+						a {
+
+							&:after {
+								background: #fff !important;
+								opacity: 1;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
-
-	a {
-		color: #fff;
-	}
-
-	li {
-		&.hover-item {
-			a {
-				&:after {
-					background: #fff !important;
-				}
-			}
-		}
-
-		&.active-item {
-			a {
-				&:after {
-					opacity: 0 !important;
-				}
-			}
-		}
-	}
-
-	.header-contacts {
 
 		a {
-			transition: color ease .2s;
+			color: #fff;
+		}
 
-			&:hover {
-				color: #333;
+		li {
+			&.hover-item {
+				a {
+					&:after {
+						background: #fff !important;
+					}
+				}
+			}
+
+			&.active-item {
+				a {
+					&:after {
+						opacity: 0 !important;
+					}
+				}
+			}
+		}
+
+		.header-contacts {
+
+			a {
+				transition: color ease .2s;
+
+				&:hover {
+					color: #333;
+				}
 			}
 		}
 	}

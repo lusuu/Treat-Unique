@@ -15,13 +15,17 @@
 
 .logo-burger-holder {
 	.clearfix;
+	padding: 40px 0 0;
+	margin: -40px 0 0;
 }
 
 /* Logo */
 .logo {
+	display: block;
 	margin: 0 0 30px;
 
 	@media @tablet {
+		display: none;
 		float: left;
 		margin: 0;
 	}
@@ -37,5 +41,13 @@
 		@media @tablet {
 			font-size: 30px;
 		}
+	}
+}
+
+.logo-mobile {
+	display: none;
+
+	@media @tablet {
+		display: block;
 	}
 }

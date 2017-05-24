@@ -1,0 +1,47 @@
+
+.input-field {
+	margin: 0 0 50px;
+
+	label {
+		margin: 0 0 10px;
+		color: #333;
+		display: block;
+	}
+
+	&.focused {
+
+		label {
+			color: #999;
+		}
+	}
+}
+
+.wpcf7-not-valid-tip {
+	color: #ed846b;
+}
+
+.wpcf7-text, 
+.wpcf7-number {
+	border: none;
+	width: 100%;
+	border-bottom: solid 1px #999;
+	background: #fff;
+	padding: 5px 0 15px;
+	color: #333;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.wpcf7-textarea {
+	height: 390px;
+	resize: none;
+	width: 100%;
+	border: 1px solid #999;
+	padding: 10px 15px;
+
+	@media @tablet {
+		height: 200px;
+	}
+}
