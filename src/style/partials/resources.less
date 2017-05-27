@@ -7,6 +7,16 @@
 		padding: 0;
 	}
 
+	.custom-dropdown {
+		display: none;
+		background: #f9f9f9;
+		height: 99px;
+
+		@media @tablet {
+			display: block;
+		}
+	}
+
 	.resources-filter-list {
 		.listreset;
 		.inline-block-space-parent;
@@ -57,47 +67,6 @@
 		
 		@media @tablet {
 			padding: 0;
-		}
-	}
-
-	.select {
-		display: none;
-		background: #f9f9f9;
-		height: 99px;
-
-		@media @tablet {
-			display: block;
-		}
-	}
-
-	.select-styled {
-		padding: 40px 20px;
-
-		&:before {
-			font-size: 40px;
-		}
-	}
-
-	.select-options {
-		background-color: #f9f9f9;
-		margin: -30px 0 0;
-
-		li {
-			border-bottom: none;
-			padding: 10px 20px;
-			color: #969696;
-
-			&:hover {
-				color: #333;
-			}
-
-			&:last-child {
-				padding-bottom: 20px;
-			}
-
-			&[rel="hide"] {
-				display: none;
-			}
 		}
 	}
 }
