@@ -4,6 +4,7 @@
 		background: @header-substrate-color;
 		position: relative;
 		padding-bottom: 0;
+		z-index: 9;
 
 		&:before {
 			content: '';
@@ -88,4 +89,9 @@
 
 .header-substrate-bottom {
 	background: @header-substrate-color;
+	position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9;
 }

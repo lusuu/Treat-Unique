@@ -6,7 +6,7 @@
 	background: #f2f2f2;
 
 	@media @tablet {
-		padding: 0 0 34px;
+		padding:  100px 0 34px;
 	}
 
 	a {
@@ -35,6 +35,42 @@
 						opacity: 1;
 					}
 				}
+			}
+		}
+	}
+
+	.opacity-navigation {
+
+		&:after {
+			@media @tablet {
+				opacity: .3;
+			}
+		}
+
+		&:before {
+			@media @tablet {
+				opacity: .3;
+			}
+		}
+
+		li {
+
+			&:after {
+				@media @tablet {
+					opacity: .3;
+				}
+			}
+
+			&:before {
+				@media @tablet {
+					opacity: .3;
+				}
+			}
+		}
+
+		a {
+			@media @tablet {
+				opacity: .3;
 			}
 		}
 	}
@@ -68,14 +104,23 @@
 
 /* Home Promo Section */
 .home-promo-section	{
+	.clearfix;
 	color: #fff;
 	padding: 84px 0 96px;
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 
 	@media @tablet {
-		padding: 0 0 42px;
+		padding: 0;
 	}
+
+    .background-image-overflow  {
+    	@media @tablet {
+			overflow: hidden;
+			position: relative;
+			padding: 100px 0 42px;
+		}
+    }
 
 	.home-background-image {
 		
@@ -91,7 +136,18 @@
 			z-index: 0;
 			width: 100%;
 			min-height: 100%;
+			/*max-height: 100%;*/
 			margin: 0 auto;
+
+			@media @mobile-x {
+				width: 170%;
+				transform: translateX(-25%);
+			}
+
+			@media @mobile-xs {
+				width: 270%;
+				transform: translateX(-25%);
+			}
 		}
 	}
 
@@ -99,6 +155,11 @@
 	.main-holder {
 		position: relative;
 		z-index: 1;
+	}
+
+	.header {
+		position: relative;
+		z-index: 2;
 	}
 
 	.opacity-navigation {

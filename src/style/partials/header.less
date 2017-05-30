@@ -4,6 +4,10 @@
 
 	@media @tablet {
 		padding: 41px 0 10px;
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		right: 0;
 	}
 }
 
@@ -25,13 +29,12 @@
 	margin: 0 0 30px;
 
 	@media @tablet {
-		display: none;
 		float: left;
 		margin: 0;
 	}
 	
 	a {
-		display: block;
+		display: inline-block;
 	}
 
 	.icon-logo {
@@ -41,13 +44,5 @@
 		@media @tablet {
 			font-size: 30px;
 		}
-	}
-}
-
-.logo-mobile {
-	display: none;
-
-	@media @tablet {
-		display: block;
 	}
 }

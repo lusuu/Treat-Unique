@@ -8,6 +8,7 @@ function windowSizeNavigation(){
         
         $('.navigation li.with-drop-nav').on( "click", function() {
 
+        	$('.navigation li').removeClass('active');
 			$(this).addClass('active');
 			$(this).children('.navigation-inside').addClass('active');
 			$('.promo-section .header').addClass('header-substrate');

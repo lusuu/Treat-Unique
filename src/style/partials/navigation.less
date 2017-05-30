@@ -5,8 +5,16 @@
 	transition: max-height ease .3s;
 
 	@media @tablet {
+		transition: all ease 0s;
     	max-height: 0;
     	overflow: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: #ed846b;
+		width: 100%;
+		padding: 0 20px 0;
+		z-index: 9;
     }
 }
 
@@ -19,6 +27,7 @@
 
 	@media @tablet {
 		float: none;
+		padding: 35px 0 0;
 	}
 
 	&:after {
@@ -189,7 +198,7 @@
 
 	@media @tablet {
 		float: left;
-		padding: 12px 0 0;
+		padding: 12px 0 15px;
 	}
 
 	li {

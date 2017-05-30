@@ -20,7 +20,7 @@ function windowSizeNavigationScroll(){
 	var headerNavigationHeight = headerBigNavHeight + headerInsideNavHeight + 120;
 
 	var windowHeight = $(window).height();
-	var navigationSectionScrollHeight = windowHeight - 100;
+	var navigationSectionScrollHeight = windowHeight - 76;
 
     if (windowHeight >= headerNavigationHeight ){
 		$('.navigation-section-hold').removeClass('navigation-section-scroll');
