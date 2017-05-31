@@ -3,7 +3,7 @@ function windowSizeNavigation(){
 
 		$('.promo-section .header').removeClass('header-substrate');
 		$('.navigation-inside').removeClass('active');
-		$('.header-substrate-bottom').height(0);
+		// $('.header-substrate-bottom').height(0);
 
     	var linkName = '';
         var isWiped = false;
