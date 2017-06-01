@@ -29,7 +29,7 @@ function windowSizeNavigationScroll(){
 		$('.navigation-section-scroll').height(navigationSectionScrollHeight);
     }
 
-	if ($(window).width() >= '768'){
+	if ($(window).width() >= '992'){
         $('.navigation-section-scroll').css( {'height': 'auto'});
     }
 }

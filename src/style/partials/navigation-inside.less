@@ -1,13 +1,20 @@
 /* Navigation Inside */
 .navigation-inside {
 	.listreset;
-	display: none;
 	float: none;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	min-width: 280px;
 	z-index: 10;
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity ease .3s;
+
+	@media @tablet {
+		display: none;
+	}
 
 	@media @tablet {
 		position: relative;
@@ -18,7 +25,12 @@
 	}
 
 	&.active {
-		display: block;
+		opacity: 1;
+		max-height: 1000px;
+
+		@media @tablet {
+			display: block;
+		}
 	}
 
 	li {
