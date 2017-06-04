@@ -1,3 +1,4 @@
+// Makes all links transparent
 $('.promo-section .navigation > li').hover(
 	function() {
 		$('.promo-section .navigation').toggleClass('opacity-navigation');
@@ -7,19 +8,21 @@ $('.promo-section .navigation > li').hover(
 	}
 );
 
+// Makes left border list transparent
 $('.promo-section .navigation > li:first-child').hover(
 	function() {
 		$(this).closest('ul').toggleClass('hover-item-ul-prev');
 	}
 );
 
+// Makes right border list transparent
 $('.promo-section .navigation > li:last-child').hover(
 	function() {
 		$(this).closest('ul').toggleClass('hover-item-ul-next');
 	}
 );
 
-
+// Makes active link not transparent, pseudo hover
 $('.promo-section .navigation-inside > li > a').hover(
 	function() {
 		$('.promo-section .navigation-inside').toggleClass('opacity-navigation');
